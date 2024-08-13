@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_for_feed"
+    tools:context=".Feedback">
+
+    <ImageView
+        android:id="@+id/imageNoTask2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:tint="@color/colorPrimary"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/no_task_image" />
+
+    <TextView
+        android:id="@+id/textViewNoTask2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/nothing_to_sow"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageNoTask2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/feedback_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_arrow_back_white_48pt_3x"
+            android:tint="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_otzyv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_white_48pt_3x"
+            android:text="Отзывы"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/feedback_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/feedback_back" />
+
+        <LinearLayout
+            android:id="@+id/sort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/feedback_back"
+            app:layout_constraintWidth_percent="0.8">
+
+            <LinearLayout
+                android:id="@+id/sort_all"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_for_feedback_gray">
+
+                <TextView
+                    android:id="@+id/textAllFeeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Все"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sort_bad"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_for_feedback"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/count_of_sad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_bad" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sort_neutral"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_for_feedback"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/count_of_neutral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_neutral2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sort_happy"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_for_feedback"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/count_of_happy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_happy2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/button_add_feed_in_feed"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="32dp"
+            android:background="@drawable/gradient_of_next_button"
+            android:gravity="center"
+            android:text="Добавить отзыв"
+            android:textColor="@color/colorBackgrndFrg"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ListView
+            android:id="@+id/list_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toTopOf="@id/button_add_feed_in_feed"
+            app:layout_constraintTop_toBottomOf="@id/sort" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/feedbackshimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgrndFrg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_duration="1000"
+        app:shimmer_highlight_color="@color/colorAccent"
+        app:shimmer_repeat_delay="500">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/feedback_back2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_arrow_back_white_48pt_3x"
+                android:tint="@android:color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_otzyv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_white_48pt_3x"
+                android:text="Отзывы"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/feedback_back2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/feedback_back2" />
+
+            <LinearLayout
+                android:id="@+id/sort2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/feedback_back2"
+                app:layout_constraintWidth_percent="0.8">
+
+                <LinearLayout
+                    android:id="@+id/sort_all2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_for_feedback_gray">
+
+                    <TextView
+                        android:id="@+id/textAllFeeds2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Все"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sort_bad2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_for_feedback"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:id="@+id/count_of_sad2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_bad" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sort_neutral2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_for_feedback"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:id="@+id/count_of_neutral2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_neutral2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sort_happy2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_for_feedback"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:id="@+id/count_of_happy2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_happy2" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/button_add_feed_in_feed2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="32dp"
+                android:background="@drawable/gradient_of_next_button"
+                android:gravity="center"
+                android:text="Добавить отзыв"
+                android:textColor="@color/colorBackgrndFrg"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintBottom_toTopOf="@id/button_add_feed_in_feed2"
+                app:layout_constraintTop_toBottomOf="@id/sort2">
+
+                <include layout="@layout/feedback_item_shimmer" />
+
+                <include layout="@layout/feedback_item_shimmer" />
+
+                <include layout="@layout/feedback_item_shimmer" />
+
+                <include layout="@layout/feedback_item_shimmer" />
+
+                <include layout="@layout/feedback_item_shimmer" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

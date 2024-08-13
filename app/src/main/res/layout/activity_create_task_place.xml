@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTaskPlace">
+
+    <ImageView
+        android:id="@+id/image_back_name_tast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/create_place_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_arrow_back_white_48pt_3x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_for_name_tast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:background="@android:color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/createPlace_buttonleft"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+
+                android:text="@string/get_place"
+                android:textColor="@color/colorBackgrndFrg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/createPlace_buttonright"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="40dp"
+                android:text="@string/example_athome"
+                android:textColor="@color/colorBackgrndFrg"
+                app:layout_constraintBottom_toBottomOf="@id/createPlace_buttonleft"
+                app:layout_constraintLeft_toRightOf="@id/createPlace_buttonleft" />
+
+            <ImageView
+                android:id="@+id/tri_left"
+                android:layout_width="23dp"
+                android:layout_height="10dp"
+                android:background="@drawable/card_corner_triangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:outlineSpotShadowColor="@android:color/white"
+
+                app:layout_constraintLeft_toLeftOf="@id/createPlace_buttonleft"
+                app:layout_constraintRight_toRightOf="@id/createPlace_buttonleft" />
+
+            <ImageView
+                android:id="@+id/tri_right"
+                android:layout_width="23dp"
+                android:layout_height="10dp"
+                android:background="@drawable/card_corner_triangle"
+                android:visibility="invisible"
+                android:outlineSpotShadowColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/createPlace_buttonright"
+                app:layout_constraintRight_toRightOf="@id/createPlace_buttonright" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_of_create_place"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:layout_weight="3"
+            android:elevation="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="@string/step_2_5"
+                    android:textColor="@color/colorPrimaryGrey" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_far"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:gravity="center"
+                        android:text="@string/create_far_task"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <EditText
+                            android:id="@+id/suggest_query"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#f83600"
+                            android:inputType="textEmailAddress"
+                            android:hint="@string/example_place"
+                            android:padding="10dp"
+                            android:textColorHint="@android:color/black" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/suggest_result"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:clipToPadding="false"
+                            android:paddingBottom="40dp"
+                            android:visibility="invisible" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/createPlace"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="32dp"
+                android:background="@drawable/gradient_of_next_button"
+                android:gravity="center"
+                android:text="@string/next_button"
+                android:textColor="@color/colorBackgrndFrg"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

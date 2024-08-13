@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/share_item"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_share_black_48dp"
+        android:iconTint="@color/colorTextDark"
+        android:title="@string/share_user">
+    </item>
+
+    <item
+        android:id="@+id/settings_item"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_settings_48pt_3x"
+        android:iconTint="@color/colorTextDark"
+        android:title="@string/setting_user">
+    </item>
+
+</menu>

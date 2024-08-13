@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_intro_back_1"
+    tools:context=".RegistCity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:src="@drawable/image_back_city"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <Spinner
+                android:id="@+id/user_set_place"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/circle_shape_intro_white"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                app:layout_constraintLeft_toLeftOf="@id/place_txt"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/place_txt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:textColor="@color/colorBackgrndFrg"
+                android:text="Выберите город!"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/regisCity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="@string/next_button"
+            android:textColor="@color/colorBackgrndFrg"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

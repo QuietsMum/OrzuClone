@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/all_notif"
+            android:icon="@drawable/all_notif_selector"
+            android:title="Все уведомления" />
+        <item
+            android:id="@+id/feedback_notif"
+            android:icon="@drawable/otkliki_notif_selector"
+            android:title="Отклики" />
+        <item
+            android:id="@+id/system_notif"
+            android:icon="@drawable/tasks_notif_selector"
+            android:title="Задания" />
+    </group>
+</menu>

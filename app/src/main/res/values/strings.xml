@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Orzu Услуги</string>
+    <string name="show">Показать</string>
+    <string name="viewfilters">ViewFilters</string>
+    <string name="filters">Фильтры</string>
+    <string name="border">Border</string>
+    <string name="logoview">LogoView</string>
+    <string name="next_dis">далее</string>
+    <string name="disview1">disView1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="Phone">Телефон</string>
+    <string name="parentcat">ParentCat</string>
+    <string name="done_filters">Применить</string>
+    <string name="clear">очистить</string>
+    <string name="new_name">Имя</string>
+    <string name="all_tasks">Найти задание</string>
+    <string name="add_task">Создать задание</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="my_tasks">Мои задания</string>
+    <string name="no_tasks">Вы пока не создали ни одного задания!</string>
+    <string name="add_my_task">Добавить задание</string>
+    <string name="name_of_user">User</string>
+    <string name="regist_text_button">Создайте!</string>
+    <string name="no_acc_dialog">Нет аккаунта?</string>
+    <string name="sms_verif">SMS Подтверждение:</string>
+    <string name="next_button">ДАЛЬШЕ</string>
+    <string name="shr_hint_password">Password</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="tech_sup">Техподдержка</string>
+    <string name="nothing_to_sow">Ничего не найдено!</string>
+    <string name="no_internet">No Internet</string>
+    <string name="reconnect">Переподключиться</string>
+    <string name="no_internet_text">Нет интернета!</string>
+    <string name="name_of_task">Название задачи</string>
+    <string name="example_tv">Например починить телевизор</string>
+    <string name="example_place">Город, район или точный адрес</string>
+    <string name="example_athome">Удаленно</string>
+    <string name="example_term_textisp">Дату выполнения задачи обсудите с выбранным исполнителем.</string>
+    <string name="example_term_text_from">Когда начать?</string>
+    <string name="example_term_text_to">Когда закончить?</string>
+    <string name="example_term_choosedate">Выберите дату</string>
+    <string name="choose">Выбрать</string>
+    <string name="example_create_amout">Указать цену самому</string>
+    <string name="find">Найти</string>
+    <string name="what_to_do">Что нужно сделать?</string>
+    <string name="get_place">Указать место</string>
+    <string name="create_far_task">Встреча не нужна, исполнитель выполнит заказ там, где ему удобнее. Для исполнителей из любых городов.</string>
+    <string name="dogovorus">Договорюсь с исполнителем</string>
+    <string name="period">Указать период</string>
+    <string name="truedate">Точная дата</string>
+    <string name="my_amout">Указать цену самому</string>
+    <string name="his_amout">Исполнитель\nпредложит цену</string>
+    <string name="his_price_only">Исполнитель предложит цену сам.</string>
+    <string name="tell_about_task">Расскажите подробнее о задаче</string>
+    <string name="opisanie">Описание и пожелания</string>
+    <string name="photo_plus">Добавить фотографии</string>
+    <string name="step_1_5">Шаг 1 из 5</string>
+    <string name="step_2_5">Шаг 2 из 5</string>
+    <string name="step_2_5_title">Укажите место</string>
+    <string name="step_3_5">Шаг 3 из 5</string>
+    <string name="step_3_5_title">Укажите сроки</string>
+    <string name="step_4_5">Шаг 4 из 5</string>
+    <string name="step_4_5_title">Укажите цену</string>
+    <string name="step_5_5">Шаг 5 из 5</string>
+    <string name="step_5_5_title">Укажите детали</string>
+    <string name="plus_images_button">Добавить изображения</string>
+    <string name="create_task">Создание задание</string>
+    <string name="share_user">Поделиться</string>
+    <string name="setting_user">Редактирование</string>
+    <string name="subscribes">подписка на категории</string>
+    <string name="notification">Уведомления</string>
+    <string name="old_password">Старый пароль</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="new_password_re">Повторите пароль</string>
+    <string name="something_text">Безопасная оплата картой и гарантия возврата денег. Компенсация в случае морального ущерба.</string>
+    <string name="forgot_pwd"> Забыли пароль?</string>
+    <string name="registration">Зарегистрироваться </string>
+    <string name="bonus">Бонусы</string>
+    <string name="uchastnik">Стать участником</string>
+    <string name="partners">Наши партнеры</string>
+
+    <string-array name="datecreatelist">
+        <item>В любое время</item>
+        <item>утром (до 12)</item>
+        <item>днем (с 12 до 17)</item>
+        <item>вечером (с 17 до 22)</item>
+        <item>ночью (после 22)</item>
+    </string-array>
+
+    <string-array name="amoutlist">
+        <item>тенге</item>
+        <item>сомони</item>
+        <item>сум</item>
+    </string-array>
+
+    <string-array name="citylist">
+        <item>Душанбе</item>
+        <item>Алматы</item>
+        <item>Бишкек</item>
+        <item>Ташкент</item>
+    </string-array>
+    <string name="facebook_app_id">829528237552045</string>
+    <string name="messages">Сообщения</string>
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="orzu.org">
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_in_desktop"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo_in_desktop"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".LastPageSale" />
+        <activity
+            android:name=".CreatePartnerSale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PartnerDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PortfolioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FullScreenImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ItemSubsNews"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificationSettings"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".NotificationsMessagingService"
+            android:exported="false">
+            <intent-filter android:priority="1">
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistCity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategorySubscriptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserEditProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AddSuggest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddFeedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FeedbackTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Congratz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserSettings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".Feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".CreateTaskSubCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".CreateTaskCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".CreateTaskPhoto"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".CreateTaskDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".CreateTaskAmout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".CreateTaskTerm"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".CreateTaskPlace"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateTaskName"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".TaskViewMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeCard" />
+        <activity
+            android:name=".ViewpagerStart"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="orzu.org"
+                    android:pathPattern="/orzu"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubCategoryView2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhoneLoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CoreActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Receiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".SubCategoryView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategoryView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FiltersActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

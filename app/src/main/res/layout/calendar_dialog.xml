@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_of_calendar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintLeft_toLeftOf="@id/calendarView"
+            app:layout_constraintRight_toRightOf="@id/calendarView"
+            app:layout_constraintTop_toBottomOf="@id/calendarView">
+
+            <TextView
+                android:id="@+id/cancel_calendar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.9"
+                android:background="@drawable/circle_button_center"
+                android:gravity="center"
+                android:text="Отмена"
+                android:textAlignment="center"
+                android:textColor="@color/colorOrangeRed" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.2" />
+
+            <TextView
+                android:id="@+id/ok_calendar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.9"
+                android:background="@drawable/gradient_of_next_button_calendar"
+                android:gravity="center"
+                android:text="Далее"
+                android:textColor="@android:color/white"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

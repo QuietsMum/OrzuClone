@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "566295266578",
+    "firebase_url": "https://orzu-pusher.firebaseio.com",
+    "project_id": "orzu-pusher",
+    "storage_bucket": "orzu-pusher.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566295266578:android:690ba08a42b92040469fcb",
+        "android_client_info": {
+          "package_name": "orzu.org"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566295266578-6mh0qmem4h9580pafuutfdamoa9h38le.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "orzu.org",
+            "certificate_hash": "5491a28d6af05eed491d113c27d4335a59e30d2f"
+          }
+        },
+        {
+          "client_id": "566295266578-pc311p4t33f75lbeprncmbk444m96f1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "orzu.org",
+            "certificate_hash": "367394ddda27f98397aa6d7b00f98fa528f0b2b7"
+          }
+        },
+        {
+          "client_id": "566295266578-m8pag9eur9qvkjbda9fpku3v3sldepb6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "orzu.org",
+            "certificate_hash": "abccffeb8994fa1034addee8ed70424ff9060e2a"
+          }
+        },
+        {
+          "client_id": "566295266578-en3g27ua3892i3mhihojnidpj3v1ui7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNQlh0oQJsU_NQa9V2JfWe0NgMDxachzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566295266578-en3g27ua3892i3mhihojnidpj3v1ui7r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "566295266578-ckf141ulfcdn8q6u3blilti8ar7d7r06.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "apple.eldor.Test"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566295266578:android:98df20a322bc395a469fcb",
+        "android_client_info": {
+          "package_name": "orzu.pusher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566295266578-en3g27ua3892i3mhihojnidpj3v1ui7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNQlh0oQJsU_NQa9V2JfWe0NgMDxachzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566295266578-en3g27ua3892i3mhihojnidpj3v1ui7r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "566295266578-ckf141ulfcdn8q6u3blilti8ar7d7r06.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "apple.eldor.Test"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

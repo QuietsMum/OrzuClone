@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/first"
+            android:icon="@drawable/find_selector"
+            android:title="@string/all_tasks" />
+
+        <item
+            android:id="@+id/second"
+            android:icon="@drawable/create_selector"
+            android:title="@string/add_task" />
+
+        <item
+            android:id="@+id/third"
+            android:icon="@drawable/my_taks_selector"
+            android:title="@string/my_tasks" />
+        <item
+            android:id="@+id/fourth"
+            android:icon="@drawable/notif_selector"
+            android:title="@string/notification" />
+        <item
+            android:id="@+id/fifth"
+            android:icon="@drawable/notif_selector"
+            android:title="@string/bonus" />
+        <item
+            android:id="@+id/sixth"
+            android:icon="@drawable/messenger_bubble_small_blue"
+            app:iconTint="#F9A825"
+            android:title="@string/messages" />
+        <item
+            android:id="@+id/menu_none"
+            android:title=""
+            android:visible="false" />
+    </group>
+
+
+</menu>
+

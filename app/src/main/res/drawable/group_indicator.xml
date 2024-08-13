@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_keyboard_arrow_right_black_24dp" android:state_empty="true" android:tint="@color/colorPrimary">  </item>
+    <item android:drawable="@drawable/ic_keyboard_arrow_down_black_24dp" android:state_expanded="true" android:tint="@color/colorPrimary"></item>
+    <item android:drawable="@drawable/ic_keyboard_arrow_right_black_24dp" android:tint="@color/colorPrimary"></item>
+</selector>
